@@ -38,15 +38,19 @@ package bobsrockets {
 	  class Fleet {
 	    //Now this works as Ship is present in a parent package of Fleet class.
 	    //no need to say bobsrocket.Ship
-	    val ship = new Ship
+	    val s = new Ship
 
 	    //This however is present in a package navigation which is at the
 	    //same level as fleets, hence we need to give the complete
 	    //package.
-	    val map = new bobsrockets.navigation.StarMap
+	    val m = new bobsrockets.navigation.StarMap
 	    //we can also access the class defined in a completely different package
 	    //from the root like this.
-	    val out = new outermost.InOutermost
+	    val o = new outermost.InOutermost
+	  }
+	  object Fleet {
+		  val fleet = new Fleet
+		  val ship = fleet.s
 	  }
 	}
 }

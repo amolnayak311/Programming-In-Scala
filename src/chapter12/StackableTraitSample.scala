@@ -23,7 +23,7 @@ object StackableTraitSample {
     println("Adding 1 to queue")
     queue1.put(1)
     println(queue1.queue)
-//    println("Getting element returned " + queue1.get())
+    println("Getting element returned " + queue1.get())
 //    println("Getting element returned " + queue1.get())
 //    println("Getting element returned " + queue1.get())
 

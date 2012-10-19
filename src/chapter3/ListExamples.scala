@@ -33,12 +33,12 @@ object ListExamples {
 	  println("Last element of the list is " + nonEmptyList.tail)
 	  println("All element except last is " + nonEmptyList.init)
 	  println("All element except first is " + nonEmptyList.tail)
-	  println("Sorted by Name " +
-			  (nonEmptyList sort((first,second) =>
-	    							first.compareTo(second) <= 0
-	    					)
-			  )
-			 )
+//	  println("Sorted by Name " +
+//			  (nonEmptyList sort((first,second) =>
+//	    							first.compareTo(second) <= 0
+//	    					)
+//			  )
+//			 )
 	  println("All Names appended with a 'y' " + nonEmptyList.map(elem => elem + "y"))
 	  println("adding element to list")
   }

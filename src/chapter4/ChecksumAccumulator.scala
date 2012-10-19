@@ -21,7 +21,7 @@ object ChecksumAccumulator {
   var cache = WeakHashMap[String,Int]()
 
   def calculate(s:String): Int = {
-	    if(cache containsKey s)
+	    if(cache contains s)
 	      cache(s)
 	    else {
 	    	val acc = new ChecksumAccumulator
